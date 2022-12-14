@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/IMAGES/logo (1).png" type="image/x-icon">
-    <link rel="stylesheet" href="/CSS/create.css">
     <!-- gooogle fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +12,7 @@
     <!-- icons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <title>Stark.com</title>
+    <link rel="stylesheet" href="/CSS/create.css">
 <body>
     <main> 
         <section class="form-section-1">
@@ -41,25 +41,29 @@
                 <input type="password" name="password" id="password" placeholder="Minimum of 8 characters"><br>
                 <label for="password">Confirm Password</label><br>
                 <input type="password" name="confirm" id="confirmPassword" placeholder="Minimum of 8 characters"> <br>
-                <button type="submit">Sign Up</button>
+                <button type="submit"><a href="/dashboard.html">Sign Up</a></button>
             </form>
             <div class="login">
                 <p>Or Login Using</p>
             </div>
             <div class="loginOptionsA">
                 <div class="meta">
-                    <a href="#"><img src="" alt=""> Metamask</a>
+                    <img src="./IMAGES/metamask.png" alt="" id="wallet-icon">
+                    <a href="#">Metamask</a>
                 </div>
                 <div class="coinbase">
-                   <a href="#"><img src="" alt=""> Coinbase</a>
+                    <img src="./IMAGES/coin (2).png" alt="" id="wallet-icon">
+                   <a href="#">Coinbase</a>
                 </div>
             </div>
             <div class="loginOptionsB">
                 <div class="wallet">
-                   <a href="#"><img src="" alt=""> Wallet connect</a>
+                    <img src="./IMAGES/coin.png" alt="" id="wallet-icon">
+                   <a href="#">Wallet connect</a>
                 </div>
                 <div class="phantom">
-                    <a href="#"><img src="" alt=""> Phantom</a>
+                        <img src="/IMAGES/phantom.png" alt="" id="wallet-icon">
+                        <a href="#">Phantom</a>
                 </div>
             </div>
         </div>

@@ -12,6 +12,11 @@ body{
     background: linear-gradient(90deg, rgba(1,63,33,1) 31%, rgba(31,29,16,1) 49%, rgba(57,1,1,1) 100%);
 }
 
+html, body{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
 main{
     padding: 90px;
     padding-top: 50px;
@@ -102,11 +107,56 @@ a:hover{
     width: 120px;
     margin: 65px auto 20px auto;
 }
+
 .loginOptionsA{
     margin-bottom: 20px;
 }
+
 .loginOptionsA, .loginOptionsB{
     display: flex;
     justify-content: space-between;
+}
 
+#wallet-icon{
+    width: 35px;
+    border-radius: 100%;
+}
+
+.wallet, .phantom, .meta, .coinbase{
+    display: flex;
+    line-height: 30px;
+    gap: 12px;
+}
+
+/* media query */
+@media only screen and (max-width:992px){
+    main{
+       padding-top: 140px;
+    }
+    .form-section-1{
+        text-align: center;
+    }
+    .form-section-3{
+        justify-content: center;
+    }
+    .form-section-3-1, .logo2{
+        display: none;
+    }
+}
+@media only screen and (max-width:576PX){
+    input, button{
+        width: 376px;
+    }
+}
+@media only screen and (max-width:375px){
+    main{
+        padding: 40px;
+    }
+    input, button{
+        width: 250px;
+    }
+    .loginOptionsA, .loginOptionsB{
+        flex-direction: column;
+        gap: 20px;
+    }
 }

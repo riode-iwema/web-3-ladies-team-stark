@@ -22,6 +22,24 @@ hr{
     border: #F4B400 0.1px groove;
 }
 
+html, body{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+#logo{
+    display: none;
+}
+#cancel{
+    display: none;
+}
+#hamburger-menu{
+    display: none;
+}
+
+.nav-mobile{
+    display: none;
+}
+
 .connect-1{
     background-color: #033B1F;
     padding: 0 1rem 0rem 3rem;
@@ -47,23 +65,36 @@ hr{
 }
 
 .connect-1-b a{
-    margin: 0 auto;
+    display: inline-block;
     padding: 0 6px;
     transition: 0.6s;
+    width: 150px;
+    border-radius: 8px;
 }
 
-.connect-1-b a:hover{
+.connect-1-b a:hover, .connect-1-b a:focus{
     border: 1px solid #F4B40D;
 }
 
 .connect-2{
     background: rgb(3,69,36);
-    background: linear-gradient(90deg, rgba(3,69,36,1) 31%, rgba(7,23,12,1) 49%, rgba(57,0,0,1) 100%);
+    background: linear-gradient(135deg, rgba(3,69,36,1) 31%, rgba(7,23,12,1) 49%, rgba(57,0,0,1) 100%);
     width: 85%;
 }
 
 .connect-wallet{
     display: flex;
+}
+
+#wallet-icon{
+    width: 35px;
+    border-radius: 100%;
+}
+
+.wallet, .phantom, .meta, .coinbase{
+    display: flex;
+    line-height: 30px;
+    gap: 12px;
 }
 
 .connect-1-b{
@@ -78,19 +109,15 @@ hr{
     margin: 1rem 0;
     width: 100%;
     padding: 15px 3px;
-    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+
 }
 
 #logout{
     margin: 0 auto 3rem auto;
 }
 
-.free-trial{
-    font-size: 14px;
-    width: 100%;
-    text-align: center;
-    border-radius: 5px;
-}
 
 .free-trial a{
     color: #F4B40D;
@@ -100,11 +127,14 @@ hr{
    color: #fff;
 }
 
-
 .nav2{
-    padding: 2rem 8rem 3rem 10rem;
+    padding: 2rem 8rem 0rem 10rem;
     display: flex;
     justify-content: space-between;
+}
+
+.nav2 a{
+    line-height: 40px;
 }
 
 .nav2 input[type=text]{
@@ -146,8 +176,9 @@ button:hover{
 }
 
 .container{
-    background: rgb(34,72,29);
-    background: linear-gradient(90deg, rgba(34,72,29,1) 31%, rgba(21,16,8,1) 49%, rgba(58,1,1,1) 100%);
+    background: rgba(34,72,29,0.3);
+    /* background: linear-gradient(90deg, rgba(34,72,29,1) 31%, rgba(21,16,8,1) 49%, rgba(58,1,1,1) 100%); */
+    backdrop-filter: blur(8px);
     max-width: 400px;
     margin: 3rem auto 0 auto;
     padding: 1.5rem;
@@ -199,3 +230,133 @@ button:hover{
     color: #F4B40D;
 }
 
+/* **************************************** mediaquery **************************************/
+@media only screen and (max-width:992px){
+    
+}
+@media only screen and (max-width:576px){
+   
+    header{
+        padding: 50px;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        margin-right: 40px;
+    }
+    .nav-mobile{
+        display: flex;
+        gap: 10px;
+    }
+    .nav-mobile a{
+        display: inline-block;
+        width: 40px;
+        line-height: 50px;
+    }
+    .nav2{
+        padding-right: 0;
+        padding-top: 0;
+
+    }
+    #search-bar{
+        width: 280px;
+        height: 40px;
+        margin-top: 5px;
+        padding-left: 30px;
+        transition: 1000ms;
+    }
+    #search-bar, #nav-middle, #nav-btn{
+        display:none;
+        
+    }
+    #hamburger-menu{
+        display: unset;
+        height: 100%;
+        width: 0%;
+        position: fixed;
+        z-index: 1;
+        right: 0;
+        top: 0;
+        backdrop-filter: blur(4px);
+        background-color: rgba(0,0,0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s; 
+    }
+    #cancel{
+        display: block;
+        position: absolute;
+        top: 3%;
+        right: -7%;
+    }
+    .hamburger-content{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: relative;
+        top: 7%;
+        width: 100%;
+        margin-left: 30px; 
+    }
+    #hamburger-btn{
+        padding: 5px 20px;
+        background-color: transparent;
+        border: 2px solid #F4B40D;
+        border-radius: 10px;
+        color: #fff;
+    }
+    #nav-hamburger:hover{
+        color: #F4B40D;
+        transition: 300ms;
+    }
+    .connect-1-b a:hover{
+        border: none;
+    }
+    /* end of hamburger */
+    .collections-section{
+        position: relative;
+    }
+    #logo{
+        position: absolute;
+        display: block;
+    }
+    .connect-1{
+        padding: 2rem 0;
+        width: 0%;
+        display: unset;
+        height: 100%;
+        width: 0%;
+        position: fixed;
+        z-index: 1;
+        right: 0;
+        top: 0;
+        backdrop-filter: blur(4px);
+        background-color: rgba(0,0,0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s; 
+        text-align: center;
+        
+    }
+    .connect-1-b a{
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 25px;
+    }
+    .connect-2{
+        padding: 2rem 0;
+        width: 100%;
+    }
+
+    /* second part */
+.container-part-c{
+    max-width: 400px;
+}
+.container-1{
+    margin: 2.2rem 3rem 0 3rem;
+}
+.container-2{
+    margin: 2.2rem 3rem 0 3rem;
+}
+.container-part-c{
+    margin: 0px 0 0 0rem;
+}
+}

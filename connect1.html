@@ -21,38 +21,80 @@
   </head>
   <body>
     <section class="connect-wallet">
-      <section class="connect-1">
-        <div class="connect-1-a">
-          <img src="./IMAGES/logo (1).png" alt="" />
+        <div class="connect-1-a" id="logo">
+            <img src="./IMAGES/logo (1).png" alt="">
         </div>
+        <section class="connect-1" id="connect-one">
+            <div class="connect-1-a">
+                <img src="./IMAGES/logo (1).png" alt="">
+            </div>
+            
+            <div class="connect-1-b">
+                <a href="#" onclick="closeIcon2()" class="close" id="cancel"><i class="ri-close-line ri-2x"></i></a>
+                <a href="./dashboard.html"><i class="ri-home-4-line icon"></i>  Dashboard</a>
+                <a href=""><i class="ri-chat-1-line icon"></i>  Blog</a>
+                <a href=""><i class="ri-wallet-2-line icon"></i> Wallet</a>
+                <a href="./collections.html"><i class="ri-vip-diamond-fill icon"></i> Collections</a>
+                <a href=""><i class="ri-group-line icon"></i> Profile</a>
+                <a href="./create.html"><i class="ri-pencil-line icon"></i> Create</a>
+                <div class="free-trial">
+                    <p>Get free one month access <a href="">Get</a> </p>
+                </div>
+                <a href="./signup.html" id="logout"><i class="ri-logout-box-r-line iconl"></i>Logout</a>
+            </div>
+            
+        </section>
+    
+        <section class="connect-2" id="connect-two">
+            <div class="connect-2-a">
+                
+                <nav>
+                    <div class="nav2">
+                        <input type="text" name="" id="search-bar" placeholder=" Search items ,articles , latest  project,resources">
+                        <a href="/index.html" id="nav-middle">Home</a>
+                        <a href="" id="nav-middle">About us</a>
+                    </div>
+                    <div class="nav-mobile">
+                        <a href="#" onclick="searchIcon()" class="search-mobile"><i class="ri-search-line ri-2x"></i></a>
+                        <a href="#" onclick="hamburgerIcon2()" class="hamburger"><i class="ri-menu-line ri-2x"></i></a>
+                    </div>
+                </nav>
+                <!-- c end here -->
+    
+                <div class="connect-2-b">
+                    <div class="container">
+                        <div class="container-1">
+                            <h3>Connect wallet</h3>
+                            <p>If you do not have a wallet,kindly <a href="" id="gold">create one now</a></p>
+                        </div>
 
-        <div class="connect-1-b">
-          <a href=""><i class="ri-home-4-line icon"></i> Dashboard</a>
-          <a href=""><i class="ri-chat-1-line icon"></i> Blog</a>
-          <a href=""><i class="ri-wallet-2-line icon"></i> Wallet</a>
-          <a href=""><i class="ri-vip-diamond-fill icon"></i> Collections</a>
-          <a href=""><i class="ri-group-line icon"></i> Profile</a>
-          <a href="./create.html"><i class="ri-pencil-line icon"></i> Create</a>
-          <div class="free-trial">
-            <p>Get free one month access <a href="">Get</a></p>
-          </div>
-          <a href="" id="logout"
-            ><i class="ri-logout-box-r-line iconl"></i>Logout</a
-          >
-        </div>
-      </section>
-
-      <section class="connect-2">
-        <div class="connect-2-a">
-          <div class="nav2">
-            <input
-              type="text"
-              name=""
-              id="search-bar"
-              placeholder=" Search items ,articles , latest  project,resources" />
-            <a href="/index.html" id="nav-middle">Home</a>
-            <a href="" id="nav-middle">Resources</a>
-          </div>
+                        <hr>
+                        <div class="container-2">
+                            <div class="container-2-3">
+                                <div class="meta">
+                                    <img src="./IMAGES/metamask.png" alt="" id="wallet-icon">
+                                    <a href="#">Metamask</a>
+                                </div>
+                                <div class="coinbase">
+                                    <img src="./IMAGES/coin (2).png" alt="" id="wallet-icon">
+                                   <a href="#">Coinbase</a>
+                                </div>
+                                <div class="wallet">
+                                    <img src="./IMAGES/coin.png" alt="" id="wallet-icon">
+                                   <a href="#">Wallet connect</a>
+                                </div>
+                                <div class="phantom">
+                                        <img src="/IMAGES/phantom.png" alt="" id="wallet-icon">
+                                        <a href="#">Phantom</a>
+                                </div>
+                            </div>
+                            <div class="container-btn">
+                                <button>
+                                    <a href="./collections.html">Connect wallet</a>
+                                </button>
+                            </div>
+                            
+                        </div>
 
           <div class="connect-2-b">
             <div class="container">
@@ -88,5 +130,9 @@
         </div>
       </section>
     </section>
+
+    <script src="./JS/script.js"></script>
+
   </body>
 </html>
+
